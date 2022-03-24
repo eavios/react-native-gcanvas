@@ -52,7 +52,7 @@ rootProject.extensions.sdks = [
         'Weex'          : '0.18.18.17',
         'WeexAnnotation': '1.3',
         'ReactNative'   : '+',
-        'ABIs'          : ["armeabi-v7a","arm64-v8a"],
+        'ABIs'          : ["armeabi-v7a","arm64-v8a", "x86"],
         'EXCLUDE_CPP_SHARED' : false
 ]
 

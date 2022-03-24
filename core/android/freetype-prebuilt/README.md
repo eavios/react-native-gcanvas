@@ -6,4 +6,4 @@
 * 打包配置:
     * ndk-18
     * c++_shared
-    * 打包产物: armeabi-v7a/arm64-v8a
+    * 打包产物: armeabi-v7a/arm64-v8a/x86
