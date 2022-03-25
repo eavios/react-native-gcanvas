@@ -57,7 +57,7 @@ ext {
         'Weex'          : '0.26.0',
         'WeexAnnotation': '1.3',
         'ReactNative'   : '+',
-        'ABIs'          : ["armeabi-v7a","arm64-v8a","x86"],
+        'ABIs'          : ["armeabi-v7a","arm64-v8a","x86", "x86_64"],
         'EXCLUDE_CPP_SHARED' : false
         ],
 
