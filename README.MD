@@ -425,3 +425,8 @@ To support my work, please consider donate.
 ## License
 
 This project is licensed under the Apache License - see the [LICENSE](./docs/LICENSE.md) file for details
+
+
+https://www.codeproject.com/Articles/1071771/Building-FreeType-Libraries-for-x-Devices-Using-th
+
+https://sourceforge.net/projects/freetype/files/freetype2/
