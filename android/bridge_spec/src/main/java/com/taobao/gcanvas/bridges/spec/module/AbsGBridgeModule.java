@@ -375,6 +375,19 @@ public abstract class AbsGBridgeModule<JSCallback> implements IGBridgeModule<JSC
         }
     }
 
+    @Override 
+    public float getTextWidth(final String canvasId, String text) {
+        try {
+            if (TextUtils.isEmpty(text))
+                return 0;
+
+            float width = GCanvasJNI.getTextWidth(canvasId, text, text.length());
+            return width;
+        } catch (Throwable e) {
+            GLog.e(TAG, e.getMessage(), e);
+        }
+    }
+
 
     public abstract Context getContext();
 

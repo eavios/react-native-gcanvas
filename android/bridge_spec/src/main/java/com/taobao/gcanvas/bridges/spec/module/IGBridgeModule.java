@@ -142,4 +142,12 @@ public interface IGBridgeModule<JSCallback> {
      * @return String result
      */
     String extendCallNative(String canvasId, String cmd, int type);
+
+    /**
+     * Calculate width of inline text based on the current font of the context.
+     * @param canvasId
+     * @param text
+     * @return float result
+     */
+    float getTextWidth(String canvasId, String text);
 }

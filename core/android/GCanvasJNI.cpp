@@ -813,4 +813,23 @@ JNIEXPORT void JNICALL Java_com_taobao_gcanvas_GCanvasJNI_setLogLevel(
     return;
 }
 
+JNIEXPORT jfloat JNICALL Java_com_taobao_gcanvas_GCanvasJNI_getTextWidth(
+        JNIEnv *je, jclass jc, jstring contextId, jstring text, jint strLength) {
+    LOG_D("Canvas JNI::getTextWidth text (%s) length (%d)", text, strLength);
+    
+    GCanvasManager *theManager = GCanvasManager::GetManager();
+    char *cid = jstringToString(je, contextId);
+    string canvasId = cid;
+    free(cid);
+    GCanvasWeex *theCanvas = (GCanvasWeex *) theManager->GetCanvas(canvasId);
+    
+    if (theCanvas) {
+        float width = theCanvas->GetGCanvasContext()->MeasureTextWidth(text, strLength);   
+        LOG_D("Canvas JNI::getTextWidth returned width of (%d) for text (%s)", text, width);
+        return width;
+    }
+    
+    return 0;
+}
+
 

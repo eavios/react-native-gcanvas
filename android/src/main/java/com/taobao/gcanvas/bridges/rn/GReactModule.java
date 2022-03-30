@@ -622,6 +622,17 @@ public class GReactModule extends ReactContextBaseJavaModule implements Lifecycl
         }
     }
 
+    @ReactMethod
+    public float getTextWidth(final String refId, final String text) {
+        GReactTextureView textureView = mViews.get(refId);
+            if (null == textureView) {
+                GLog.w(TAG, "getTextWidth ===> can not find canvas with id ===> " + refId);                
+                return 0;
+            }
+            return mImpl.getTextWidth(textureView.getCanvasKey(), text)
+    }
+
+
     public GReactModule(ReactApplicationContext reactContext) {
         super(reactContext);
         mImpl = new RNModuleImpl();

@@ -61,6 +61,7 @@ About writing the javascript part, you can refer to[Custom Javascript Bridge](./
 | bindImageTexture(data, callback) | Async      | Both         | Bind image to an OpenGL Texture with callback |
 | setContextType                   | Async      | Both         | Set GCanvas Context Type, 0-2d, 1-WebGL  |
 | toDataURL                        | Sync       | Both         | returns a data URI containing a canvas snapshot |
+| getTextWidth                     | Sync       | Both         | returns calculated width of a segment of inline text based on current font of the context |
 | setLogLevel                      | Async      | Both         | Set Native Log Level                     |
 | resetComponent                   | Async      | iOS only     | call the method while view disappear     |
 | texImage2D                       | Sync       | Android only | convert image to texture, used for WebGL |

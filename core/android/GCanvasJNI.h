@@ -154,6 +154,8 @@ JNIEXPORT void JNICALL Java_com_taobao_gcanvas_GCanvasJNI_addFallbackFontFamily(
 JNIEXPORT void JNICALL Java_com_taobao_gcanvas_GCanvasJNI_setLogLevel(
         JNIEnv *je, jclass jc, jstring logLevel);
 
+JNIEXPORT jfloat JNICALL Java_com_taobao_gcanvas_GCanvasJNI_getTextWidth(JNIEnv *je, jclass jc, jstring contextId, jstring text, jint strLength);
+
 #ifdef GCANVAS_WEEX
 
 JNIEXPORT void JNICALL Java_com_taobao_gcanvas_GCanvasJNI_setPreCompilePath(

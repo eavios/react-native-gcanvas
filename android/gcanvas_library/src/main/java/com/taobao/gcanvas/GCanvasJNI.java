@@ -269,5 +269,6 @@ public class GCanvasJNI {
         qualityMap.put(contextID, isHiQuality);
     }
 
+    public static native float getTextWidth(String text, int strLength);
 
 }

@@ -493,7 +493,8 @@ export default class CanvasRenderingContext2D {
   }
 
   measureText = function(text) {
-    throw new Error('GCanvas not supported yet');
+    const width = CanvasRenderingContext2D.GBridge.getTextWidth(text)
+    return { width }
   }
 
   isPointInPath = function(x, y) {

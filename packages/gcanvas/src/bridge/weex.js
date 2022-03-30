@@ -204,6 +204,14 @@ const GBridge = {
       image.id = id;
       callback(image);
     });
+  },
+
+  getTextWidth(text) {
+    if (isWeexIOS) {
+      throw new Error('GCanvas.getTextWidth not supported yet in IOS');
+    } else if (isWeexAndroid) {
+     return GCanvasModule.getTextWidth(text);
+    }
   }
 };
 
